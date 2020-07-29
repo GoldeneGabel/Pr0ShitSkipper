@@ -6,6 +6,8 @@
 // @author       GoldeneGabel
 // @match        https://pr0gramm.com/*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/GoldeneGabel/Pr0ShitSkipper/master/index.js
+// @downloadURL  https://raw.githubusercontent.com/GoldeneGabel/Pr0ShitSkipper/master/index.js
 // ==/UserScript==
 
 (function() {
