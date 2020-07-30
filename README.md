@@ -10,4 +10,6 @@ Bei Hochlads die eine der folgenden Bedingungen erfüllen wird sofort einen Post
 Ja. Solange du deine Tab-Taste gedrückt hälst bleibt das Skript inaktiv.
 
 ## Wie kann ich das Skript installieren?
-Du benötigst ein Browser-Addon zum ausführen von User-Scripts. Da gibt's zum Beispiel [tampermonkey](https://tampermonkey.net) oder [greasemonkey](https://www.greasespot.net)
+* Du benötigst zuerst ein Browser-Addon zum ausführen von User-Scripts. Da gibt's zum Beispiel [tampermonkey](https://tampermonkey.net).
+
+* Klicke anschließend auf den folgenden [Link](https://github.com/GoldeneGabel/Pr0ShitSkipper/raw/master/Pr0ShitSkipper.user.js) um das User-Script zu installieren.
