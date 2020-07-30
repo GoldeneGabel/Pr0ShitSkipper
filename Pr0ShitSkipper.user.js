@@ -35,7 +35,7 @@
         return false;
     }
     function skipBad(direction) {
-        if(Number(jQuery('.score').get(0)?.text || 0) < -100) {
+        if(Number(jQuery('.score').get(0)?.textContent || 0) < -100) {
             if(direction < 0) {
                 prevPost();
                 return true;
