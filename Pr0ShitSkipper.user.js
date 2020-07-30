@@ -1,23 +1,27 @@
 // ==UserScript==
 // @name         Pr0ShitSkipper
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  try to take over the world!
 // @author       GoldeneGabel
 // @match        https://pr0gramm.com/*
 // @grant        none
-// @updateURL    https://github.com/GoldeneGabel/Pr0ShitSkipper/raw/master/Pr0ShitSkipper.user.js
-// @downloadURL  https://github.com/GoldeneGabel/Pr0ShitSkipper/raw/master/Pr0ShitSkipper.user.js
+// @updateURL    https://raw.githubusercontent.com/GoldeneGabel/Pr0ShitSkipper/master/index.js
+// @downloadURL  https://raw.githubusercontent.com/GoldeneGabel/Pr0ShitSkipper/master/index.js
 // ==/UserScript==
 
 (function() {
     'use strict';
+    var benisCache = [];
     async function fetchBenis() {
         try{
             var username = jQuery("div.item-details>a.user")[0].text;
             var url = "https://pr0gramm.com/api/profile/info?name="+username;
-            var response = await jQuery.getJSON(url);
-            return response.user.score;
+            if(!benisCache[username]) {
+                var response = await jQuery.getJSON(url);
+                benisCache[username] = response.user.score;
+            }
+            return benisCache[username];
         } catch(e) {
             return 0;
         }
