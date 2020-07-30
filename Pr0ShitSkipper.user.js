@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pr0ShitSkipper
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  try to take over the world!
 // @author       GoldeneGabel
 // @match        https://pr0gramm.com/*
